@@ -1,4 +1,4 @@
-package com.weg.Spring_Produto;
+package com.weg.pedido;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

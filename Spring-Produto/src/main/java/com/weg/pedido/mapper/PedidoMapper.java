@@ -1,26 +1,25 @@
-package com.weg.Spring_Produto.mapper;
+package com.weg.pedido.mapper;
 
-import com.weg.Spring_Produto.dto.PedidoRequest;
-import com.weg.Spring_Produto.dto.PedidoResponse;
-import com.weg.Spring_Produto.model.Pedido;
+import com.weg.pedido.dto.request.PedidoRequestDto;
+import com.weg.pedido.dto.response.PedidoResponseDto;
+import com.weg.pedido.model.Pedido;
 import org.springframework.stereotype.Component;
 
 @Component
 public class PedidoMapper {
 
     public Pedido toEntity(
-        PedidoRequest pedidoRequest
+        PedidoRequestDto pedidoRequest
     ){
         return new Pedido(
-                null,
                 pedidoRequest.data_pedido()
         );
     }
 
-    public PedidoResponse toResponse(
+    public PedidoResponseDto toResponse(
             Pedido pedido
     ){
-        return new PedidoResponse(
+        return new PedidoResponseDto(
                 pedido.getId(),
                 pedido.getData_pedido()
         );

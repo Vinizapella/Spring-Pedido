@@ -1,4 +1,4 @@
-package com.weg.Spring_Produto;
+package com.weg.pedido;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

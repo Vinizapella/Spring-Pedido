@@ -1,4 +1,7 @@
 package com.weg.pedido.repositorio;
 
-public class PedidoRepositorio {
+import com.weg.pedido.model.Pedido;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PedidoRepositorio extends JpaRepository<Pedido, Integer > {
 }
