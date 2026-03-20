@@ -61,7 +61,6 @@ Base URL: `http://localhost:8080/api/pedidos`
 | `GET` | `/{id}` | Busca pedido por ID |
 | `POST` | `/` | Cria um novo pedido |
 | `PUT` | `/{id}` | Atualiza um pedido existente |
-| `PATCH` | `/{id}/status` | Atualiza o status do pedido |
 | `DELETE` | `/{id}` | Cancela/remove um pedido |
 
 
