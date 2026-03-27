@@ -1,9 +1,10 @@
 package com.weg.pedido.repositorio;
 
-import com.weg.pedido.model.Departamento;
+import com.weg.pedido.model.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DepartamentoRepositorio extends JpaRepository<Departamento, Long> {
+public interface ClienteRepositorio extends JpaRepository<Cliente, Long> {
+    Cliente findByIdClienteNome(String nome);
 }
